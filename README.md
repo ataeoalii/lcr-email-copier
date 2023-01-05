@@ -10,22 +10,25 @@ this tool so that others can use it for their callings.
 
 # Installation
 
-1. Download the repository as a zip.
+1. Download the repository as a zip and unzip it on your computer.
 
-2. Unzip the archive.
+![Download ZIP](docs/1-download.png)
 
+2. Go to [chrome://extensions](chrome://extensions) in your chrome browser.
 
-3. Go to chrome://extensions in your chrome browser.
+![Chrome Extensions](docs/2-chrome-extension.png)
 
+3. Enable developer mode. After doing this, you'll see 3 additional buttons ("Load Unpacked", "Pack extension", and "Update").
 
-4. Enable developer mode.
+![Developer Mode](docs/3-developer-mode.png)
 
+4. Click "Load Unpacked" and select the "source" folder from the unzipped lcr-email-copier folder on your computer.
 
-5. Click load unpacked.
+![Select Source](docs/4-select-source.png)
 
+5. Ensure that the LCR Email Address Copier extension is enabled with the slider slid to the right.
 
-6. Select the "source" folder.
-
+![Enable Extension](docs/5-enable-extension.png)
 
 Congratulations 🎉! The extension is now installed and can be used whenever you are trying to
 [send a message](https://lcr.churchofjesuschrist.org/messaging) on the church website.
@@ -34,14 +37,22 @@ Congratulations 🎉! The extension is now installed and can be used whenever yo
 
 1. Go to the [Send A Message](https://lcr.churchofjesuschrist.org/messaging) application on LCR.
 
-2. Select all the email addresses you want to send a message to
+2. Select all the email addresses you want to send a message to.
 
-3. Optionally fill out the subject line
+![Add Recipients](docs/6-add-recipients-red.png)
+
+3. Optionally fill out the subject line.
+
+![Add Subject](docs/7-add-subject-red.png)
 
 4. Scroll to the bottom of the page and select an email provider from the list
 
+![Add Subject](docs/8-select-provider.png)
+
 5. Click Send To/CC/BCC Recipients. This will open a new window with a composition page to send
 an email to all the recipients.
+
+![Send Email](docs/9-send-email.png)
 
 NOTE: This tool was only created for the LCR "Send a Message" function and will only display the
 additional buttons on that page. If the church updates the website and this no longer works, please

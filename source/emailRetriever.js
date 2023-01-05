@@ -38,7 +38,7 @@ function getSelectedMailProvider() {
         }
     }
 
-    return "gmailProviderCopier";
+    return "gmail";
 }
 
 function sendMsg(recipientField) {
