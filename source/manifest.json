@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "LCR Email Address Copier",
+  "description": "This extension copies email addresses from the churchofjesuschrist.org page and opens Gmail with the subject field and either To, CC, or BCC fields filled out with those email addresses depending on the button clicked.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "action": {
+    "default_icon": "icon.png",
+    "default_title": "LCR Email Address Copier"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://lcr.churchofjesuschrist.org/messaging*"],
+      "js": ["emailRetriever.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
