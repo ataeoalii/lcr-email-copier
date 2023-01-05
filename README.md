@@ -10,7 +10,7 @@ this tool so that others can use it for their callings.
 
 # Installation
 
-1. Download the repository as a zip and unzip it on your computer.
+1. Scroll to the top of this page, click the green Code button and then "Download ZIP". After downloading, unzip it on your computer.
 
 ![Download ZIP](docs/1-download.png)
 
