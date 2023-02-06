@@ -63,12 +63,14 @@ function initMailProviders() {
         {
             "id": "gmailProviderCopier",
             "name": "gmail",
-            "label": "Gmail"
+            "label": "Gmail",
+            "limits": "https://support.google.com/a/answer/166852"
         },
         {
             "id": "yahooProviderCopier",
             "name": "yahoo",
-            "label": "Yahoo!"
+            "label": "Yahoo!",
+            "limits": "https://help.yahoo.com/kb/SLN3353.html"
         },
         {
             "id": "mailtoProviderCopier",
@@ -78,6 +80,14 @@ function initMailProviders() {
     ];
 
     var emailCopierDiv = document.createElement("div");
+    emailCopierDiv.style.borderStyle = "double";
+    emailCopierDiv.style.margin = "5%";
+    emailCopierDiv.style.padding = "2%";
+    var heading = document.createElement("h3");
+    heading.innerHTML = "LCR Email Copier";
+    heading.style.padding = "1%";
+    heading.style.borderBottom = "solid";
+    emailCopierDiv.appendChild(heading);
     var paragraph = document.createElement("p");
     paragraph.innerHTML = "Please select an email provider to use:";
     emailCopierDiv.appendChild(paragraph);
@@ -98,8 +108,22 @@ function initMailProviders() {
             label.style.float = "left";
             label.style.padding = "0px 1em 0px 8px";
 
+
             emailCopierDiv.appendChild(radioButton);
             emailCopierDiv.appendChild(label);
+
+            if (provider.limits) {
+                var limitSpan = document.createElement("span");
+                limitSpan.innerHTML = ` see ${provider.label} daily `;
+                limitSpan.style.fontStyle = "italic";
+                var limitsLink = document.createElement("a");
+                limitsLink.setAttribute("href", provider.limits);
+                limitsLink.innerHTML = "sending limits";
+                limitsLink.style.fontStyle = "italic";
+                emailCopierDiv.appendChild(limitSpan);
+                emailCopierDiv.appendChild(limitsLink);
+            }
+
             emailCopierDiv.appendChild(document.createElement("br"));
             emailCopierDiv.appendChild(document.createElement("br"));
         }
